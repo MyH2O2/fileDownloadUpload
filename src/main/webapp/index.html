@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>File upload and download</title>
+</head>
+<body>
+    <a href="/test/download?filename=template.txt" download="template.txt" >Download</a>
+    <br><br>
+    <form action="/test/upload2" enctype="multipart/form-data" method="post">
+        <!-- <input type="text" value="User Name">
+        <input type="file" name = "file"> -->
+        <br>
+        <input type="file" name = "file">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,8 @@
+batch学习
+http://blog.csdn.net/it_man/article/details/2048638
+
+深入浅出Windows BATCH
+http://blog.csdn.net/hitlion2008/article/details/7467252
+
+深度学习（二十九）Batch Normalization 学习笔记
+http://blog.csdn.net/hjimce/article/details/50866313
