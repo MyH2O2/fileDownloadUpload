@@ -4,6 +4,10 @@ public class ResultBean<T> {
 	
 	private T data;
 	
+	public ResultBean() {
+		
+	}
+	
 	public ResultBean(T data) {
 		this.data = data;
 	}

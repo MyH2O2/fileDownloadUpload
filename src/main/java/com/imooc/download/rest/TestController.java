@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,6 +34,13 @@ public class TestController{
         System.out.println("get1 ok.");
         return new ResultBean<UserInfo>(new UserInfo("zhangxing", 26));
     }
+	
+	@PostMapping("/user")
+	public ResultBean<UserInfo> createUser(@RequestBody UserInfo user) throws IOException {
+		System.out.println(user.getName()+ ","+user.getAge());
+		
+		return new ResultBean<UserInfo>(user);
+	}
     
     @GetMapping("/download")
     public void download(HttpServletRequest req, HttpServletResponse rsp) throws Exception
