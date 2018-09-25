@@ -2,6 +2,7 @@
 Download and Upload file
 
 1.Download
+
   1)下载前台技术用的是超链接标签a,如：
   \<a href="url" download="filename"\>
   
@@ -14,7 +15,8 @@ Download and Upload file
 
   
 2.Upload
-  1)使用form表单，因为get请求是将内容拼接在url后，上传文件是将文件解析成二进制流处理，所以url回很长，而且不安全 ，故form表单method="post",
+
+  1)使用form表单，因为get请求是将内容拼接在url后，上传文件是将文件解析成二进制流处理，所以url会很长，而且不安全 ，故form表单method="post",
   而且数据类型必须是enctype="multipart/form-data"，如：
   
     <form action="/test/upload" enctype="multipart/form-data" method="post">
